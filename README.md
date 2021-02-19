@@ -1,2 +1,3 @@
 # php-crud
-Exercicio de CRUD em php+js+mysql
+Arquivo dbturim.sql contem o banco para o projeto
+Utilizado xampp + Apache NetBeans
