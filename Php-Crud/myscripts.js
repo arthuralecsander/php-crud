@@ -37,13 +37,15 @@ function removerPai(id) {
         for (var i = 0; i <= listaPessoas.pessoas[id].filhos.length; i++) {
             removerFiho(id, i);
         }
-
-        console.log(listaPessoas);
-        listaPessoas.pessoas.splice(id, 1);
-        atualizarLista();
-        removerPessoasLista('paiId' + id);
     }
-} //Metodo de excluir pai
+    console.log(listaPessoas);
+    listaPessoas.pessoas.splice(id, 1);
+    atualizarLista();
+    removerPessoasLista('paiId' + id);
+}
+
+
+//Metodo de excluir pai
 
 function removerFiho(idpai, idfilho) {
     removerPessoasLista('paiId' + idpai + 'filhoId' + idfilho);
